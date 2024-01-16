@@ -61,3 +61,30 @@ section{
       align-items: center;
     }
    
+  #horizontal-box{
+    background-color: rgb(255, 255, 255);
+    height: 200px;
+    border: 0.5px black solid;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+  }
+    .searching{
+      display: grid;
+      align-items: center;
+      margin-top: 10px;
+      grid-template-columns: 4fr 0.5fr 0.5fr 1fr; 
+    }
+    
+      input{
+        background-color: rgb(222, 217, 217);
+        width: 600px;
+        padding: 15px;
+        border-radius: 15px;
+      }
+      #pollos{
+        height: 60px;
+        width: 60px;
+      }
+      #ricardo{
+        font-size: 1.5rem;
+      }
