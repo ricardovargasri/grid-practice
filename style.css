@@ -5,7 +5,7 @@
 }
 section{
   display: grid;
-  grid-template-columns: 1fr 4fr;
+  grid-template-columns: 0.7fr 4fr;
   height: 100vh;
 }
   .sidebar{
@@ -64,16 +64,22 @@ section{
   #horizontal-box{
     background-color: rgb(255, 255, 255);
     height: 200px;
-    border: 0.5px black solid;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
     display: grid;
     grid-template-rows: 1fr 2fr;
-  }
+    }
     .searching{
       display: grid;
-      align-items: center;
       margin-top: 10px;
-      grid-template-columns: 4fr 0.5fr 0.5fr 1fr; 
+      grid-template-columns: 4fr 0.5fr 0.5fr 1fr;
+      align-items: center;
+      
     }
+      #enlace{
+        display: grid;
+        grid-template-columns: 0.5fr 6fr;
+        align-content: center;
+      }
     
       input{
         background-color: rgb(222, 217, 217);
@@ -88,3 +94,40 @@ section{
       #ricardo{
         font-size: 1.5rem;
       }
+    #down-box{
+      display: grid;
+      grid-template-columns: 1fr 5fr repeat(3, 1fr);
+      
+    
+    }
+      #pollasos{
+        height: 80px;
+        width: 80px;  
+      }
+      #down-box a{
+        display: grid;
+        justify-items: center;
+        align-items: center;
+      }
+      #pollasos:hover{
+        height: 90px;
+        width: 90px;
+      }
+        #down-box .textos{
+          display: grid;
+          justify-items: start;
+          align-content: center;
+        }
+        .boton{
+        background-color: rgb(13 115 255);
+        margin: 35px;
+        color: aliceblue;
+        font-size: 1.2em;
+        border-radius: 25px;
+        border: 0.5px white solid;
+      }
+        .boton:hover{
+          margin: 35px;
+          font-size: 1.6em;
+        }
+  
