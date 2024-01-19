@@ -165,12 +165,11 @@ section{
             align-items: start;
           }
           .img-cards{
-            display: flex;
-            flex-direction: row;
-            margin-left: 445px;
-            width: 35px;
-            height: 35px;
-            
+            display: grid;
+            grid-template-columns: 35px 35px 35px;
+            align-items: center;
+            justify-content: end;
+            padding-right: 20px;
           }
           .img-cards img{
             padding-left: 5px;
